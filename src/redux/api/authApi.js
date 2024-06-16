@@ -3,7 +3,9 @@ import { userApi } from "./userApi";
 
 export const authApi = createApi({
   reducerPath: "authApi",
-  baseQuery: fetchBaseQuery({ baseUrl: "/api/v1" }),
+  baseQuery: fetchBaseQuery({
+    baseUrl: "https://techstore-be.onrender.com/api/v1",
+  }),
   keepUnusedDataFor: 30,
   endpoints: (builder) => ({
     register: builder.mutation({
