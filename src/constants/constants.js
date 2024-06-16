@@ -6,6 +6,11 @@ export const PRODUCT_SMARTPHONE = [
   "Sony",
   "Xiaomi",
   "Nokia",
+  "Acer",
+  "Asus",
+  "Dell",
+  "HP",
+  "Macbook",
 ];
 export const PRODUCT_LAPTOP = [];
 export const PRODUCT_CATEGORIES = ["Laptop", "Headphone", "Smartphone"];
