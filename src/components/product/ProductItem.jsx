@@ -34,7 +34,13 @@ const ProductItem = ({ product, columnSize, index }) => {
               ({product.numOfReviews})
             </span>
           </div>
-          <p className="card-text mt-2">{product?.price}đ</p>
+          <p className="card-text mt-2">
+            {" "}
+            {new Intl.NumberFormat("vi-VN", {
+              style: "currency",
+              currency: "VND",
+            }).format(product?.price)}
+          </p>
           <Link
             to={`product/${product?._id}`}
             id="view_btn"

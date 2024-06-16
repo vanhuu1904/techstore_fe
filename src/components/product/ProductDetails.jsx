@@ -129,7 +129,12 @@ const ProductDetail = () => {
           </div>
           <hr />
 
-          <p id="product_price">{product?.price}đ</p>
+          <p id="product_price">
+            {new Intl.NumberFormat("vi-VN", {
+              style: "currency",
+              currency: "VND",
+            }).format(product?.price)}
+          </p>
           <div className="stockCounter d-inline">
             <span className="btn btn-danger minus" onClick={decreaseQuantity}>
               -

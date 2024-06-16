@@ -23,7 +23,7 @@ const Header = () => {
         <div className="navbar-brand">
           <Link to={"/"}>
             <img
-              src="/images/TECHSTORE.png"
+              src="/images/TECHSTORELOGO.png"
               style={{ width: "149px", height: "58px" }}
               alt="ShopIT Logo"
             />

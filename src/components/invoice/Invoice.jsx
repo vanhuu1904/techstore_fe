@@ -51,7 +51,7 @@ const Invoice = () => {
         <div id="order_invoice" className="p-3 border border-secondary">
           <header className="clearfix">
             <div id="logo">
-              <img src="/images/invoice-logo.png" alt="Company Logo" />
+              <img src="/images/TECHSTORELOGO.png" alt="Company Logo" />
             </div>
             <h1>INVOICE # ${order?._id}</h1>
             <div id="company" className="clearfix">
