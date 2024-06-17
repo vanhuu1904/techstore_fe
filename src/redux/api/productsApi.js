@@ -4,8 +4,9 @@ export const productApi = createApi({
   reducerPath: "productApi",
   baseQuery: fetchBaseQuery({
     baseUrl: "https://backend.vanhuu1904.click/api/v1",
+    credentials: "include",
   }),
-  keepUnusedDataFor: 30,
+  // keepUnusedDataFor: 30,
   tagTypes: ["Product", "AdminProducts", "Reviews"],
   endpoints: (builder) => ({
     getProducts: builder.query({

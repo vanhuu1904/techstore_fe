@@ -7,7 +7,7 @@ export const authApi = createApi({
     baseUrl: "https://backend.vanhuu1904.click/api/v1",
     credentials: "include",
   }),
-  keepUnusedDataFor: 30,
+  // keepUnusedDataFor: 30,
   endpoints: (builder) => ({
     register: builder.mutation({
       query(body) {

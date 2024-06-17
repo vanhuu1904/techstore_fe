@@ -5,7 +5,7 @@ export const vnpayApi = createApi({
     baseUrl: "https://backend.vanhuu1904.click/api/v1",
     credentials: "include",
   }),
-  keepUnusedDataFor: 30,
+  // keepUnusedDataFor: 30,
   endpoints: (builder) => ({
     createVNPay: builder.mutation({
       query(body) {

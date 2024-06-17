@@ -7,7 +7,7 @@ export const userApi = createApi({
     baseUrl: "https://backend.vanhuu1904.click/api/v1",
     credentials: "include",
   }),
-  keepUnusedDataFor: 30,
+  // keepUnusedDataFor: 30,
   tagTypes: ["User", "AdminUsers"],
   endpoints: (builder) => ({
     getMe: builder.query({

@@ -12,6 +12,7 @@ import {
 } from "react-router-dom";
 import { calculateOrderCost } from "../../helpers/helpers";
 import { useCreateVNPayMutation } from "../../redux/api/vnpayApi";
+import { createOrder } from "../../redux/api";
 
 const PaymentMethod = () => {
   const [method, setMethod] = useState("");
@@ -68,6 +69,7 @@ const PaymentMethod = () => {
     let vnp_ResponseCode = searchParams.get("vnp_ResponseCode");
     if (vnp_ResponseCode === "00") {
       toast.success("thanh toán thành công");
+      // createOrder(orderData);
       createNewOrder(orderData);
       navigate("/me/orders?order_success=true");
     } else if (vnp_ResponseCode === "24") {
