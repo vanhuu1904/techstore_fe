@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const vnpayApi = createApi({
   reducerPath: "vnpayApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://techstore-be.onrender.com/api/v1",
+    baseUrl: "https://backend.vanhuu1904.click/api/v1",
   }),
   keepUnusedDataFor: 30,
   endpoints: (builder) => ({

@@ -4,7 +4,7 @@ import { setIsAuthenticated, setLoading, setUser } from "../features/userSlice";
 export const userApi = createApi({
   reducerPath: "userApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://techstore-be.onrender.com/api/v1",
+    baseUrl: "https://backend.vanhuu1904.click/api/v1",
   }),
   keepUnusedDataFor: 30,
   tagTypes: ["User", "AdminUsers"],
