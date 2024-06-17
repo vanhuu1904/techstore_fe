@@ -5,6 +5,7 @@ export const authApi = createApi({
   reducerPath: "authApi",
   baseQuery: fetchBaseQuery({
     baseUrl: "https://backend.vanhuu1904.click/api/v1",
+    credentials: "include",
   }),
   keepUnusedDataFor: 30,
   endpoints: (builder) => ({

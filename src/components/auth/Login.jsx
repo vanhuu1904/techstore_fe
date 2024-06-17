@@ -10,15 +10,18 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
   const { isAuthenticated } = useSelector((state) => state.auth);
-  const [login, { data, isLoading, error }] = useLoginMutation();
+  const [login, { data, isLoading, isSuccess, error }] = useLoginMutation();
   useEffect(() => {
-    if (isAuthenticated === true) {
+    // if (isAuthenticated === true) {
+    //   navigate("/");
+    // }
+    if (isSuccess) {
       navigate("/");
     }
     if (error) {
       toast.error(error?.data?.message);
     }
-  }, [error, isAuthenticated]);
+  }, [error, isAuthenticated, isSuccess]);
   const submitHandler = async (e) => {
     e.preventDefault();
     const loginData = {

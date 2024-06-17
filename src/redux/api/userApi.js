@@ -5,6 +5,7 @@ export const userApi = createApi({
   reducerPath: "userApi",
   baseQuery: fetchBaseQuery({
     baseUrl: "https://backend.vanhuu1904.click/api/v1",
+    credentials: "include",
   }),
   keepUnusedDataFor: 30,
   tagTypes: ["User", "AdminUsers"],
