@@ -25,4 +25,3 @@ export const store = configureStore({
       vnpayApi.middleware,
     ]),
 });
-setupListeners(store.dispatch);
